@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AWS (Amazon Elastic Compute Cloud)</title>
+<script type="text/javascript" src="Jing%20He%27s%20group_files/jquery.js"></script>
+
+<style type="text/css">
+<!--
+body{
+	font-size: 14px;
+	color: black;
+	font-family: "trebuchet ms", helvetica, sans-serif;
+}
+
+a:link {
+	color: #616D7E;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #616D7E;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #616D7E;
+}
+
+#header
+{
+	position: relative;
+	width: 900px;
+	height: 60px;
+	margin: 0px auto;
+	padding-bottom: 0px;
+     text-shadow: 2px 2px 5px #888888;
+	background: inherit;
+	font-size: 40px;
+	color: black;
+	font-weight: bold;
+	letter-spacing: -1px;
+      text-align:center;
+}
+
+#content
+{
+     position: relative;
+     font-family: arial, Georgia;
+     box-shadow: 8px 8px 3px #888888;
+     border-radius:15px;
+	background: inherit;
+	width: 900px;
+	position: relative;
+	margin: 10px;
+	font-size: 16px;
+	color: #5F5A59;
+	border-style: solid;
+	border-width: 1px 3px 3px 1px;
+	border-color: #736F6E #5E5A80 #5E5A80 #736F6E;
+	padding: 10px 10px 10px 10px;
+	line-height: 30px;
+     margin: 0px auto;
+     overflow-y: auto;
+}
+
+.display li
+{
+     position: relative;
+	height:40px;
+	line-height:40px;
+	width:290px;
+	float:left;
+	text-align:center;
+	color: #616D7E;
+	list-style: none;
+	font-weight: bold;
+	font-size:16px;
+	border-bottom:1px dashed #856F5C;
+     overflow:hidden;
+}
+
+#content a
+{
+	display: block;
+	background: inherit;
+	height:40px;
+	line-height:40px;
+	width:290px;
+     text-align:center;
+}
+
+#content a:link
+{
+	text-decoration: none;
+	color: #616D7E;
+}
+
+#content a:visited
+{
+	text-decoration: none;
+	color: #616D7E;
+}
+
+#content a:hover
+{
+	text-decoration: none;
+}
+
+.display h3
+{
+     width: 800px;
+     color: black;
+     box-shadow: 10px 10px 10px #888888;
+     border-radius:30px;
+	margin: 10px 5px 10px 5px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	background-color: #E3E4FA;
+	padding: 5px 10px 5px 30px;
+	letter-spacing: -1px;
+     float: left;
+}
+
+.display h4
+{
+	position: relative;
+     width: 800px;
+     color: #5F5A59;
+     box-shadow: 10px 10px 10px #888888;
+     border-radius:10px;
+	margin: 10px 5px 10px 5px;
+	line-height: 30px;
+	font-size: 18px;
+	background-color: #FFF5EE;
+	padding: 5px 10px 5px 30px;
+	letter-spacing: -1px;
+     float: left;
+}
+
+#content h4
+{
+     border-bottom: 3px solid #6D7B8D;
+	margin: 0px 5px 5px 5px;
+	font-size: 18px;
+	letter-spacing: -1px;
+}
+
+#content h5
+{
+     font-family: arial, Georgia;
+     color: #5F5A59;
+	font-size: 16px;
+}
+
+#content h6
+{
+     font-family: arial, Georgia;
+	position: relative;
+	margin: 20px auto;
+	line-height: 30px;
+	font-size: 16px;
+	letter-spacing: -1px;
+}
+
+#footer
+{
+     color: #6D7B8D;
+     padding: 5px 20px 5px 20px;
+	width: 900px;
+	margin: 20px auto;
+	text-align: center;
+	text-transform: capitalize;
+	border-top-style: solid;
+	border-top-color: #6D7B8D;
+	border-top-width: 1px;
+}
+-->
+</style>
+</head>
+
+<body>
+	<div id="header">
+     AWS EC2 (Amazon Elastic Compute Cloud)
+	</div>						
+
+	<div id="content">
+		<div class = "display">
+			<h3>Amazon Web Services</h3>
+			<li><a href = "https://console.aws.amazon.com/console/home">AWS List</a></li>
+		</div>
+
+		<div class = "display">
+			<h3><abbr title = "Virtual Servers in the Cloud">AWS EC2</abbr></h3>
+			<h4>Note: <br/>AWS EC2 is one year free (12/17/2013)</h4>
+			<h4><a href = "http://ubuntu-fans.blogspot.com/2009/02/yum.html">yum</a>
+				<br/>yum update
+				<br/>yum install
+				<br/>yum remove
+				<br/>yum search &lt;keyword&gt;
+				<br/>yum list, list all available packages
+				<br/>yum list updates, list all available update packages
+				<br/>yum list installed, list all installed packages
+				<br/>yum info
+				<br/>yum clean
+			</h4>
+			<h4>Mount EBS
+				<br/>Elastic Block Storage/Attach
+				<br/>sudo mkdir /mnt/my-data
+				<br/>sudo mount /dev/sf /mnt/my-data
+			</h4>
+			<h4>User Guide
+				<br/>Private IP is fixed, public IP address is a mapped dynamic IP address
+				<br/>Git Generally Only Adds Data
+				<br/>Git has three main states that your files can reside in: committed, modified, and staged. Committed means that the data is safely stored in your local database. Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
+			</h4>
+			<li><a href = "http://aws.amazon.com/ec2/">EC2</a></li>
+			<li><a href = "http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html"><abbr title = "Pre-configured templates for your instances,">AMIs</abbr></a></li>
+			<li><a href = "http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html"><abbr title = "highly available, highly reliable, predictable storage volumes that can be attached to a running Amazon EC2 instance.">EBS</abbr></a></li>
+			<li><a href = "https://aws.amazon.com/marketplace/ref=mkt_ste_ec2">AWS MarketPlace</a></li>
+			<li><a href = "http://aws.amazon.com/free/">AWS Free Tier</a></li>
+			<li><a href = "http://aws.amazon.com/resources/"><abbr title = "A central starting point to find documentation, code samples,release notes, and other information to help you create innovative applications using AWS.">AWS Resources</abbr></a></li>
+			<li><a href = "https://forums.aws.amazon.com/index.jspa?#">AWS Forum</a></li>
+			<li><a href = "https://aws.amazon.com/support?&isauthcode=true&code=lOmrtYDU3bAY5arIzLtIE_cTxN2b3E9D3tEnmOlK82BbuH954Hr3TeKaubM6MaLEMr3JcCJLUT8FBjUgF8yyM1dkrBbV2cfDdMZQuV0ApoizMlK1UclLLnu3msqAq_eOfdwVeyd075UI5N_q_PsbkMOpmISg91TiE6X3OypUMLZsbaTks0UfVF6z4Y8dxfBFXYfp2Umld6R6kq5pbJL8X5e3Cb2Y9MTwjHFRHfHQ6U44jM6jzqivE6OpRM7SV7cP_DJQhbydfMGd7Yo8Q48xAz43zmR2a9HBR8nwoYQyT_5eOFXs1WpGTZvVk4FwVyDLRBoYnY8sfwk7lhF-_96RBm8VxMOLycVhwLSgtC_jDWCnHqy43sdSstbpool-_CjFFfcLX5H-YxV3ry9V0DFAU4cKa_36wAV28RLjLa2pf90AwSZYwY5wsPlluqx9NZPy0ig1XsgVGgCxCwp2kQsB9VDR2s0dzf1rDe2RE1EWnyaHzUsa4QHsVBmklmEUzpBnQeCfx3aYC89gurSykC4Lv7NUvH56_psrVxlSamjpWtTUtaSf6RY3gWkuekItPFRwkS0U8wc4zC40gsvqY7lulQV-MjSOHWuWROuddXv7ioYtzXFRfpmq3d_nCXQy9V-SDT85VrEcOUfau2RbuUomJE9_Wn0mmmb_QqzKcmtRWVMJvaDxdrmm_0Cl6X4u7E5FiMSGdS99lJjHvJ1uzZw9kTtEp1Kzh8AFgDaYJQymRqf2XJP3AbZkOKuFY7MExkkiDF-OqKT_iHWmaL-hqHNoUzsd1dD_pertPc0TuNlPkHUBYOpJSe4VBl5i3ENFSixjAx0EAIS7MLtXdja33B82o4G4NofgNN4iJP8Oc9Q4-vRW72nzS6H5kccjztbArcQc1e2RpVmCbzxNjhQNZcFItTl-cRgaj7ud1rHpssefvkPnq0bVJD7rx6yjPaKI5kZqGIFihgasDTnqPunVzTaB6Vh3oxgDgbCQo6vNrzU1aFuLvjXFg2J4J6v62alXvziBtfnDCjkDEC0aHKX-SeLTpglqW9TjUJqel1vhyzQCPkIK2vnHMomWT4YPYwPWuBKapdUVvokU28BvDNhUjlA">AWS Support Center</a></li>
+			<li><a href = "http://aws.amazon.com/documentation/">Document</a></li>
+			<li><a href = "http://aws.amazon.com/iam/">IAM</a></li>
+			<li><a href = "http://aws.amazon.com/documentation/cli/"><abbr title = "AWS Command Line Interface">CLI</abbr></a></li>
+			<li><a href = "http://aws.amazon.com/code/Amazon-EC2/">Sample Code&Libraries</a></li>
+		</div>
+	</div>
+<body>
+</html>
