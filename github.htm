@@ -1,9 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!-- saved from url=(0049)file:///home/lchen/Dropbox/Club/Skills/github.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <title>GitHub</title>
-<script type="text/javascript" src="Jing%20He%27s%20group_files/jquery.js"></script>
+<script type="text/javascript" src="file:///home/lchen/Dropbox/Club/Skills/Jing%20He%27s%20group_files/jquery.js"></script>
 
 <style type="text/css">
 <!--
@@ -187,12 +188,12 @@ a:hover {
 	</div>						
 
 	<div id="content">
-<div class = "display">
+<div class="display">
       <h3>Tutorial</h3>
-      <li><a href = "https://github.com">Homepage</a></li>
-      <li><a href = "http://git-scm.com/doc">Document</a></li>
+      <li><a href="https://github.com/">Homepage</a></li>
+      <li><a href="http://git-scm.com/doc">Document</a></li>
       <h4>Note:
-	      <br/>Version Control System (VCS)
+	      <br>Version Control System (VCS)
 	      <br>git clone git://git.kernel.org/pub/scm/git/git.git, update Git
 	      <br>git config --global user.name "John Doe", set up username
 	      <br>git config --global user.email johndoe@example.com, set up e-mail
@@ -202,40 +203,72 @@ a:hover {
 	      <br>git help add, git add --help, man git-add, get help
       </h4>
       <h4>Basics:
-	      <br/>git init, initialize a repository
-	      <br/>git add *.c, track files
-	      <br/>git commit -m "Project Name", initial commit
-	      <br/>git clone [url], Every version of every file for the history of the project is pulled down
-	      <br/>git status, check the status of the files
-	      <br/>.gitignore, set the the files that could be ignored in the status list, put in the same directory as .git
-	      <br/>git diff, show the difference between the files in your working area and the files in the stage area
-	      <br/>git commit, commit the staged files
-	      <br/>git rm, remove the files, The next time you commit, the file will be gone and no longer tracked. 
-	      <br/>git rm -cached, remove the files in the staged area
-	      <br/>git mv README.txt README, rename the file
-	      <br/>git log, show the histroy commits
-	      <br/>git log --since=2.weeks, get last two weeks' records
-	      <br/>gitk, display the commit history
-	      <br/>git commit --amend, append some updated to the previous commit
-	      <br/>git checkout -- file, discharge the changes
-	      <br/>git remote -v, lists the shortnames of each remote handle
-	      <br/>git remote add [shortname] [url], add remote repository
-	      <br/>git remote rm [shortname], remove the remote repository
-	      <br/>git fetch [shortname], Fetching and Pulling from Your Remotes
-	      <br/>git push [remote-name] [branch-name], push your project at a point to the remote server
-	      <br/>git remote show, see more information about a particular remote
-	      <br/>git remote rename pb paul, rename a reference
-	      <br/>git tag -a v1.0 -m "My Version 1.0", create a tag
-	      <br/>git tag, display all tag
-	      <br/>git branch, display all branches
-	      <br/>git branch testing, create a branch
-	      <br/>git checkout testing, switch to branch
-	      <br/>git checkout -b iss53, create a branch and switch to it at the same time
-	      <br/>git merge, merge two branches
-	      <br/>git branch -d hotfix, delete a branch
+	      <br>git init, initialize a repository
+	      <br>git add *.c, track files
+	      <br>git commit -m "Project Name", initial commit
+	      <br>git clone [url], Every version of every file for the history of the project is pulled down
+	      <br>git status, check the status of the files
+	      <br>.gitignore, set the the files that could be ignored in the status list, put in the same directory as .git
+	      <br>git diff, show the difference between the files in your working area and the files in the stage area
+	      <br>git commit, commit the staged files
+	      <br>git rm, remove the files, The next time you commit, the file will be gone and no longer tracked. 
+	      <br>git rm -cached, remove the files in the staged area
+	      <br>git mv README.txt README, rename the file
+	      <br>git log, show the histroy commits
+	      <br>git log --since=2.weeks, get last two weeks' records
+	      <br>gitk, display the commit history
+	      <br>git commit --amend, append some updated to the previous commit
+	      <br>git checkout -- file, discharge the changes
+	      <br>git remote -v, lists the shortnames of each remote handle
+	      <br>git remote add [shortname] [url], add remote repository
+	      <br>git remote rm [shortname], remove the remote repository
+	      <br>git fetch [shortname], Fetching and Pulling from Your Remotes
+	      <br>git push [remote-name] [branch-name], push your project at a point to the remote server
+	      <br>git remote show, see more information about a particular remote
+	      <br>git remote rename pb paul, rename a reference
+	      <br>git tag -a v1.0 -m "My Version 1.0", create a tag
+	      <br>git tag, display all tag
+	      <br>git branch, display all branches
+	      <br>git branch testing, create a branch
+	      <br>git checkout testing, switch to branch
+	      <br>git checkout -b iss53, create a branch and switch to it at the same time
+	      <br>git merge, merge two branches
+	      <br>git branch -d hotfix, delete a branch
       </h4>
-      <li><a href = "https://github.com/eagletiger1/Club">Download</a></li>
+      <h4>
+	      Protocols:
+	      <br>Local Protocols, git clone /opt/git/project.git
+	      <br>git remote add local_proj /opt/git/project.git
+	      <br>HTTP Protocols, git clone http://example.com/gitproject.git
+	      <br>git clone lchen@hpcq.cs.odu.edu:/home/lchen/public_html/git/Skills
+	      <br>mkdir git, create a folder named "git"
+	      <br>git init --bare, set up the repository server
+	      <br>git remote add odu lchen@hpcq.cs.odu.edu:/home/lchen/public_html/git
+	      <br>git push odu master, push the materials to the server
+	      <br>git clone lchen@hpcq.cs.odu.edu:/home/lchen/public_html/git, download the files to local
+	      <br>mv hooks/post-update.sample hooks/post-update
+	      <br>git update-server-info, to make the server to receive the files properly
+	      <br>git clone http://www.cs.odu.edu/~lchen/git
+      </h4>
+      <h4>
+	      Tools:
+	      <br/>git reflog, a log of where your HEAD and branch references have been for the last few months
+      </h4>
+      <h4>
+	      Backward:
+	      <br/>git reset 95ba06760e8e98fcae07c3f43761cd3af15632f3, go back to the older point
+	      <br/>git reset 95ba06760e8e98fcae07c3f43761cd3af15632f3 github.htm, go back to the older point for a single file
+	      <br/>git checkout, go back to the unchanged point for all files
+	      <br/>git checkout github.htm, go back to the unchanged point for a single file
+	      <br/>git reset --soft HEAD^, back to the parent of HEAD without removing the changes
+	      <br/>git reset --hard HEAD^, back to the parent of HEAD with removing the changes
+	      <br>git show, display the last commit information
+	      <br/>git show HEAD^, display the commit information of the parent of HEAD
+	      <br/>git show HEAD~2, display the parent of the parent of HEAD
+      </h4>
+      <li><a href="https://github.com/eagletiger1/Club">Download</a></li>
 </div>
 
-<body>
-</html>
+
+
+</div></body></html>
