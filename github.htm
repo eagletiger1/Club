@@ -204,8 +204,12 @@ a:hover {
       </h4>
       <h4>Basics:
 	      <br>git init, initialize a repository
-	      <br>git add *.c, track files
+	      <br>git add *.c, track files, or stage the modified files
+	      <br>git reset HEAD file, unstage file
+	      <br>git diff, To see what you’ve changed but not yet staged
+	      <br>git diff --cached, see what you’ve staged that will go into your next commit
 	      <br>git commit -m "Project Name", initial commit
+	      <br>git commit -a, automaticlly commit
 	      <br>git clone [url], Every version of every file for the history of the project is pulled down
 	      <br>git status, check the status of the files
 	      <br>.gitignore, set the the files that could be ignored in the status list, put in the same directory as .git

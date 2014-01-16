@@ -224,7 +224,32 @@ a:hover {
 				<br/>user/password: lin/e||||********
 				<br/>user can not use ssh to login to EC2 instance
 			</h4>
+			<h4>
+				CLI
+				<br/>use command line inteface to control the EC2
+				<br/>Install Command Line Interface
+				<br/>AWS_CONFIG_FILE=~/.aws/config, which contains access key id and secret access key
+			</h4>
+			<h4>
+				LAMP
+				<br/>sudo yum update -y, software update
+				<br/>sudo yum groupinstall -y "Web Server" "MySQL Database" "PHP Support", install the Apache web server, MySQL, and PHP software packages.
+				<br/>sudo yum install -y php-mysql, Install the php-mysql package.
+				<br/>sudo service httpd start, Start the Apache web server.
+				<br/>sudo chkconfig httpd on, Use the chkconfig command to configure the Apache web server to start at each system boot.
+				<br/>chkconfig --list httpd, show the configuration information
+				<br/>Make sure that the security group you are using contains a rule to allow HTTP (port 80)
+				<br/>Apache document root is /var/www/html
+				<br/>sudo groupadd www, add a group "www"
+				<br/>sudo usermod -a -G www ec2-user, add user "ec2-user" into group "www"
+				<br/>groups, show the groups
+				<br/>sudo chown -R root:www /var/www, Change the group ownership of /var/www and its contents to the www group.
+				<br/>Restart the instance to make php service work
+			</h4>
 			<h4>User Guide
+				<br/>Create the IAM user for safety reason
+				<br/>Create key-pair, .pem file
+				<br/>http://checkip.amazonaws.com/, check the local computer IP address
 				<br/>Private IP is fixed, public IP address is a mapped dynamic IP address
 				<br/>Git Generally Only Adds Data
 				<br/>Git has three main states that your files can reside in: committed, modified, and staged. Committed means that the data is safely stored in your local database. Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
@@ -240,6 +265,7 @@ a:hover {
 			<li><a href = "http://aws.amazon.com/documentation/">Document</a></li>
 			<li><a href = "http://aws.amazon.com/iam/"><abbr title = "AWS Identity and Access Management">IAM</abbr></a></li>
 			<li><a href = "http://aws.amazon.com/documentation/cli/"><abbr title = "AWS Command Line Interface">CLI</abbr></a></li>
+			<li><a href = "http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html"><abbr title = "Elastic IP Addresses">EIP</abbr></a></li>
 			<li><a href = "http://aws.amazon.com/code/Amazon-EC2/">Sample Code&Libraries</a></li>
 		</div>
 	</div>
