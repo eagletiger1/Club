@@ -202,10 +202,14 @@ a:hover {
 	      <br>git config --list, check the set
 	      <br>git help add, git add --help, man git-add, get help
       </h4>
-      <h4>Basics:
+      <h4>Basics (Chapter 1-2):
 	      <br>git init, initialize a repository
 	      <br>git add *.c, track files, or stage the modified files
 	      <br>git reset HEAD file, unstage file
+<<<<<<< HEAD
+	      <br>git rm --cached file, untrack file
+=======
+>>>>>>> bef8eb76f3772b2a84c068fd58e56eb325a5b778
 	      <br>git diff, To see what you’ve changed but not yet staged
 	      <br>git diff --cached, see what you’ve staged that will go into your next commit
 	      <br>git commit -m "Project Name", initial commit
@@ -216,9 +220,12 @@ a:hover {
 	      <br>git diff, show the difference between the files in your working area and the files in the stage area
 	      <br>git commit, commit the staged files
 	      <br>git rm, remove the files, The next time you commit, the file will be gone and no longer tracked. 
-	      <br>git rm -cached, remove the files in the staged area
 	      <br>git mv README.txt README, rename the file
 	      <br>git log, show the histroy commits
+	      <br>git log -p -2, shows the diff introduced in each commit, limits the output to only the last two entries
+	      <br>git log --stat, abbreviated stats for each commit
+	      <br>git log --pretty=oneline, short, full, fuller, changes the log output to formats other than the default
+	      <br>git log --graph, showing your branch and merge history
 	      <br>git log --since=2.weeks, get last two weeks' records
 	      <br>gitk, display the commit history
 	      <br>git commit --amend, append some updated to the previous commit
@@ -226,17 +233,26 @@ a:hover {
 	      <br>git remote -v, lists the shortnames of each remote handle
 	      <br>git remote add [shortname] [url], add remote repository
 	      <br>git remote rm [shortname], remove the remote repository
-	      <br>git fetch [shortname], Fetching and Pulling from Your Remotes
+	      <br>git fetch [shortname], Fetching and Pulling from Your Remotes, it doesn’t automatically merge it with any of your work or modify what you’re currently working on
+	      <br>git pull [shortname], automatically fetch and then merge a remote branch into your current branch
 	      <br>git push [remote-name] [branch-name], push your project at a point to the remote server
-	      <br>git remote show, see more information about a particular remote
+	      <br>git remote show [remote-name], see more information about a particular remote
 	      <br>git remote rename pb paul, rename a reference
 	      <br>git tag -a v1.0 -m "My Version 1.0", create a tag
+	      <br>git tag v1.0, create a lightweight tag
+	      <br>git push [remote-name] v1.0, transfer the tag to remote servers
+	      <br>git show v1.0, show the tagger information
 	      <br>git tag, display all tag
+	      <br>git tag -d v1.0, remove the tag
+      </h4>
+      <h4>
+	      Branch (Chapter 3):
 	      <br>git branch, display all branches
 	      <br>git branch testing, create a branch
 	      <br>git checkout testing, switch to branch
 	      <br>git checkout -b iss53, create a branch and switch to it at the same time
 	      <br>git merge, merge two branches
+	      <br>git branch, show the branches
 	      <br>git branch -d hotfix, delete a branch
       </h4>
       <h4>
@@ -247,10 +263,11 @@ a:hover {
 	      <br>git clone lchen@hpcq.cs.odu.edu:/home/lchen/public_html/git/Skills
 	      <br>mkdir git, create a folder named "git"
 	      <br>git init --bare, set up the repository server
+	      <br>mv hooks/post-update.sample hooks/post-update
+	      <br>chmod a+x hooks/post-update
 	      <br>git remote add odu lchen@hpcq.cs.odu.edu:/home/lchen/public_html/git
 	      <br>git push odu master, push the materials to the server
 	      <br>git clone lchen@hpcq.cs.odu.edu:/home/lchen/public_html/git, download the files to local
-	      <br>mv hooks/post-update.sample hooks/post-update
 	      <br>git update-server-info, to make the server to receive the files properly
 	      <br>git clone http://www.cs.odu.edu/~lchen/git
       </h4>
@@ -262,18 +279,22 @@ a:hover {
 	      Backward:
 	      <br/>git reset 95ba06760e8e98fcae07c3f43761cd3af15632f3, go back to the older point
 	      <br/>git reset 95ba06760e8e98fcae07c3f43761cd3af15632f3 github.htm, go back to the older point for a single file
+	      <br/>git reset HEAD, restore all all files from the previous commit
 	      <br/>git checkout, go back to the unchanged point for all files
 	      <br/>git checkout github.htm, go back to the unchanged point for a single file
 	      <br/>git reset --soft HEAD^, back to the parent of HEAD without removing the changes
+	      <br/>git reset -q file, resets the index entries
 	      <br/>git reset --hard HEAD^, back to the parent of HEAD with removing the changes
 	      <br>git show, display the last commit information
 	      <br/>git show HEAD^, display the commit information of the parent of HEAD
 	      <br/>git show HEAD~2, display the parent of the parent of HEAD
       </h4>
       <li><a href="https://github.com/eagletiger1/Club">Download</a></li>
-      <li><a href="http://my.eoe.cn/curious/archive/3563.html">Tutorial</a></li>
+      <li><a href="http://my.eoe.cn/curious/archive/3563.html">Git Tutorial</a></li>
       <li><a href="http://www.kuqin.com/managetool/20111119/315043.html">Back to Point Tutorial</a></li>
-      <li><a href="http://blog.csdn.net/yihui823/article/details/6681214">Back to Point</a></li>
+      <li><a href = "http://blog.csdn.net/yihui823/article/details/6673804">CSDN Tutorial I</a></li>
+      <li><a href="http://blog.csdn.net/yihui823/article/details/6681214">CSDN Tutorial II</a></li>
+      <li><a href = "http://blog.csdn.net/yihui823/article/details/6681240">CSDN Tutorial III</a></li>
       <li><a href="http://blog.csdn.net/booboo2006/article/details/7471373">Reset vs Revert</a></li>
 </div>
 
